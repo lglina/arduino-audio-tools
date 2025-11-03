@@ -135,7 +135,7 @@ class AnalogDriverESP32  : public AnalogDriverBase {
 
     /// stops the I2S and unistalls the driver
     void end() override {
-        LOGI(__func__);
+        //LOGI(__func__);
         if (active) {
           i2s_zero_dma_buffer(port_no);
         }
